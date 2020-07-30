@@ -12,8 +12,8 @@ jobs:
     - name: Make HTML
       run: |
         #cd "sphinx"
-        working-directory: sphinx
-        ls
-        pwd
-        #make html
-        #cp -r build/html/* ../docs
+        #working-directory: sphinx
+        #ls
+        #pwd
+        make html
+        cp -r build/html/* ../docs
