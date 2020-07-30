@@ -10,7 +10,7 @@ jobs:
     steps:
     - name: Make HTML
       run: |
-        cd "sphinx"
+        #cd "sphinx"
         ls
         pwd
         #make html
