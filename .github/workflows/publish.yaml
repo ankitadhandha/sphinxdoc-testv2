@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Make HTML
-      run:
+      run: |
         cd "sphinx"
         ls
         pwd
