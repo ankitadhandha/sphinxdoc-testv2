@@ -13,7 +13,7 @@ jobs:
       run: |
         cd "sphinx"
         #working-directory: sphinx
-        #ls
-        #pwd
-        make html
-        cp -r build/html/* ../docs
+        ls
+        pwd
+        #make html
+        #cp -r build/html/* ../docs
