@@ -15,5 +15,5 @@ jobs:
         #working-directory: sphinx
         ls
         pwd
-        #make html
+        make html
         #cp -r build/html/* ../docs
