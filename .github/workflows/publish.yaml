@@ -7,12 +7,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-      steps:
-        - name: Make HTML
-	  run: make html
-	    cp -r sphinx/build/* docs
-	  with:
-	    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-	    BRANCH: master
-            FOLDER: docs
-
+    steps:
+    - name: Make HTML
+      run: make html
+        cp -r sphinx/build/* docs
+      
