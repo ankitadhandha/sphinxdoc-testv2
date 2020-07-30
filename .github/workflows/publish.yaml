@@ -9,4 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Make HTML
-      run: pwd
+      run:
+        cd sphinx
+        make html
+        cp -r build/html/* ../docs
