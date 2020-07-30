@@ -10,5 +10,3 @@ jobs:
     steps:
     - name: Make HTML
       run: make html
-        cp -r sphinx/build/* docs
-      
