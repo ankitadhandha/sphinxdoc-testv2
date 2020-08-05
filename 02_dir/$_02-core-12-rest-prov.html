@@ -76,18 +76,18 @@
 <li><a class="reference internal" href="#quality-control-using-provenance-ontology-and-rest" id="id10">Quality Control using Provenance Ontology and REST</a></li>
 </ul>
 </div>
-<p><span class="xref std std-ref">Label project</span>  data will be available to <span class="xref std std-ref">investigators</span>  via <span class="xref std std-ref">REST</span>  (Representational State Transfer) services. REST is a simple stateless architecture that runs over HTTP. REST service reads a designated Web page that contains an XML file in RDF format. XML/RDF file describes and includes label project data. Data is returned to investigator in <span class="xref std std-ref">JSON-LD</span>  format.</p>
+<p><a class="reference internal" href="../10_dir/$_10-term-project.html#terms-label-project"><span class="std std-ref">Label project</span></a>  data will be available to <a class="reference internal" href="../10_dir/$_10-term-project.html#terms-investigator"><span class="std std-ref">investigators</span></a>  via <a class="reference internal" href="../10_dir/$_10-term-project.html#terms-rest"><span class="std std-ref">REST</span></a>  (Representational State Transfer) services. REST is a simple stateless architecture that runs over HTTP. REST service reads a designated Web page that contains an XML file in RDF format. XML/RDF file describes and includes label project data. Data is returned to investigator in <a class="reference internal" href="../10_dir/$_10-term-project.html#terms-json-ld"><span class="std std-ref">JSON-LD</span></a>  format.</p>
 <div class="figure align-center">
 <img alt="../_images/$_02-core-12-rest-prov_.png" src="../_images/$_02-core-12-rest-prov_.png" />
 </div>
 <div class="section" id="general-structure-of-rest-api">
 <h3><a class="toc-backref" href="#id1">General Structure of REST API</a><a class="headerlink" href="#general-structure-of-rest-api" title="Permalink to this headline">¶</a></h3>
-<p>Structure of a USDA REST <span class="xref std std-ref">conversation</span>  :</p>
+<p>Structure of a USDA REST <a class="reference internal" href="../10_dir/$_10-term-project.html#terms-conversation"><span class="std std-ref">conversation</span></a>  :</p>
 <p>Structure of the USDA REST API is:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">usda</span><span class="o">.</span><span class="n">ars</span><span class="o">.</span><span class="n">gov</span><span class="o">/</span><span class="n">rest</span><span class="o">/&lt;</span><span class="nb">input</span> <span class="n">specification</span><span class="o">&gt;/&lt;</span><span class="n">operation</span> <span class="n">specification</span><span class="o">&gt;/</span><span class="p">[</span><span class="o">&lt;</span><span class="n">output</span> <span class="n">specification</span><span class="o">&gt;</span><span class="p">]</span><span class="o">/</span><span class="p">[</span><span class="o">&lt;</span><span class="n">operation</span> <span class="n">options</span><span class="o">&gt;</span><span class="p">]</span>
 </pre></div>
 </div>
-<p>Example: “retrieve food description using food identifier <code class="xref py py-class docutils literal notranslate"><span class="pre">[USDA_fid]</span></code> and <span class="xref std std-ref">item</span> number 2244”</p>
+<p>Example: “retrieve food description using food identifier <code class="xref py py-class docutils literal notranslate"><span class="pre">[USDA_fid]</span></code> and <a class="reference internal" href="../10_dir/$_10-term-project.html#terms-item"><span class="std std-ref">item</span></a> number 2244”</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">usda</span><span class="o">.</span><span class="n">ars</span><span class="o">.</span><span class="n">gov</span><span class="o">/</span><span class="n">rest</span><span class="o">/</span><span class="n">food</span><span class="o">/</span><span class="n">USDA_fid</span><span class="o">/</span><span class="mi">2244</span><span class="o">/</span><span class="n">JSON</span>
 </pre></div>
 </div>
@@ -282,9 +282,9 @@
 </div>
 <div class="section" id="quality-control-using-provenance-ontology-and-rest">
 <h3><a class="toc-backref" href="#id10">Quality Control using Provenance Ontology and REST</a><a class="headerlink" href="#quality-control-using-provenance-ontology-and-rest" title="Permalink to this headline">¶</a></h3>
-<p>Several <span class="xref std std-ref">conversation</span>  types will be supported.</p>
+<p>Several <a class="reference internal" href="../10_dir/$_10-term-project.html#terms-conversation"><span class="std std-ref">conversation</span></a>  types will be supported.</p>
 <p>For example, Ontomatica <span class="xref std std-ref">imports</span>  the Provenance Ontology <code class="xref py py-class docutils literal notranslate"><span class="pre">[prov]</span></code>.</p>
-<p>The following illustrates a <span class="xref std std-ref">curator</span>  using <code class="xref py py-class docutils literal notranslate"><span class="pre">[prov]</span></code>:</p>
+<p>The following illustrates a <a class="reference internal" href="../10_dir/$_10-term-project.html#terms-curator"><span class="std std-ref">curator</span></a>  using <code class="xref py py-class docutils literal notranslate"><span class="pre">[prov]</span></code>:</p>
 <ul class="simple">
 <li>Alanna wishes to verify that a new data set correctly addresses previous error.</li>
 <li>David <code class="xref py py-class docutils literal notranslate"><span class="pre">[ex:David]</span></code> documents Alanna’s instructions <code class="xref py py-class docutils literal notranslate"><span class="pre">[ex:instructions]</span></code> in a plan <code class="xref py py-class docutils literal notranslate"><span class="pre">[prov:Plan]</span></code>.</li>
@@ -350,6 +350,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../03_dir/$_03-detail.html">Features - Core with Detail</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../04_dir/$_04-fda.html">Features - FDA Labeling Specifications</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../06_dir/$_06-future.html">Features - Future</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07_dir/$_07-glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10_dir/$_10-term-project.html">Terms related to Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11_dir/$_11-term-ontology.html">Terms imported from Ontologies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../13_dir/$_13-bibliography.html">Bibliographies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../15_dir/$_15-ontomatica.html">Ontomatica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../12_dir/$_12-epilogue.html">Epilogue</a></li>
 </ul>
 
 <div class="relations">
