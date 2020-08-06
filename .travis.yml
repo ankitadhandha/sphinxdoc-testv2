@@ -11,7 +11,7 @@ script:
   #- touch _build/html/.nojekyll
 
 # Tell Travis CI to copy the documentation to the gh-pages branch of
-# your GitHub repository.
+# your GitHub repository
 deploy:
   provider: pages
   skip_cleanup: true
