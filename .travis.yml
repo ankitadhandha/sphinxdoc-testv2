@@ -17,5 +17,7 @@ deploy:
   skip_cleanup: true
   token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
   keep-history: true
+  on:
+    target-branch: gh-pages
+    tags: true
   local_dir: ./sphinx/build/html/
-  target_branch: gh-pages
