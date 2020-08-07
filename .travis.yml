@@ -19,5 +19,5 @@ deploy:
   keep-history: true
   on:
     branch: master
-    tags: true
-  local_dir: ./sphinx/build/html/
+    #tags: true
+  local_dir: sphinx/build/html/
