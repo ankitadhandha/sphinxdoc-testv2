@@ -1,20 +1,19 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REST Services and Reports &#8212; Sphinx Documentation  documentation</title>
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="International Data and Methods" href="$_02-core-13-internationalization.html" />
@@ -38,21 +37,21 @@
   <div class="section" id="rest-services-and-reports">
 <span id="core-12-rest-prov"></span><h1>REST Services and Reports<a class="headerlink" href="#rest-services-and-reports" title="Permalink to this headline">¶</a></h1>
 <p id="return-to-top-02-core-12-rest-prov">This section addresses:</p>
-<dl class="role">
-<dt id="role-USDA #6">
-<code class="descname">:USDA #6:</code><a class="headerlink" href="#role-USDA #6" title="Permalink to this definition">¶</a></dt>
+<dl class="rst role">
+<dt id="role-USDA-6">
+<span id="role-USDA #6"></span><code class="sig-name descname">:USDA #6:</code><a class="headerlink" href="#role-USDA-6" title="Permalink to this definition">¶</a></dt>
 <dd><p>Permit export of composition and analytical data and conversion of composition data to an application development format.</p>
 </dd></dl>
 
-<dl class="role">
-<dt id="role-USDA #10">
-<code class="descname">:USDA #10:</code><a class="headerlink" href="#role-USDA #10" title="Permalink to this definition">¶</a></dt>
+<dl class="rst role">
+<dt id="role-USDA-10">
+<span id="role-USDA #10"></span><code class="sig-name descname">:USDA #10:</code><a class="headerlink" href="#role-USDA-10" title="Permalink to this definition">¶</a></dt>
 <dd><p>Permit assembly of ad hoc databases to suit individual needs.</p>
 </dd></dl>
 
-<dl class="role">
-<dt id="role-USDA #11">
-<code class="descname">:USDA #11:</code><a class="headerlink" href="#role-USDA #11" title="Permalink to this definition">¶</a></dt>
+<dl class="rst role">
+<dt id="role-USDA-11">
+<span id="role-USDA #11"></span><code class="sig-name descname">:USDA #11:</code><a class="headerlink" href="#role-USDA-11" title="Permalink to this definition">¶</a></dt>
 <dd><p>Permit export of ad hoc data.</p>
 </dd></dl>
 
@@ -60,20 +59,22 @@
 <h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><a class="reference internal" href="#general-structure-of-rest-api" id="id1">General Structure of REST API</a><ul>
-<li><a class="reference internal" href="#query-parameters-input-specification" id="id2">Query Parameters: Input Specification</a></li>
-<li><a class="reference internal" href="#query-parameters-operation-specification" id="id3">Query Parameters: Operation Specification</a></li>
-<li><a class="reference internal" href="#query-parameters-output-specification" id="id4">Query Parameters: Output Specification</a></li>
-<li><a class="reference internal" href="#request-food-property-tables" id="id5">Request: Food property tables</a><ul>
-<li><a class="reference internal" href="#return-food-property-table" id="id6">Return food property table</a></li>
-<li><a class="reference internal" href="#variation-return-nutrient-fact-panel-nfp-type" id="id7">Variation: Return Nutrient Fact Panel &lt;NFP_type&gt;</a></li>
-<li><a class="reference internal" href="#variation-return-dates" id="id8">Variation: Return dates</a></li>
-<li><a class="reference internal" href="#variation-return-cross-references-xrefs" id="id9">Variation: Return Cross References &lt;xrefs&gt;</a></li>
+<li><p><a class="reference internal" href="#general-structure-of-rest-api" id="id1">General Structure of REST API</a></p>
+<ul>
+<li><p><a class="reference internal" href="#query-parameters-input-specification" id="id2">Query Parameters: Input Specification</a></p></li>
+<li><p><a class="reference internal" href="#query-parameters-operation-specification" id="id3">Query Parameters: Operation Specification</a></p></li>
+<li><p><a class="reference internal" href="#query-parameters-output-specification" id="id4">Query Parameters: Output Specification</a></p></li>
+<li><p><a class="reference internal" href="#request-food-property-tables" id="id5">Request: Food property tables</a></p>
+<ul>
+<li><p><a class="reference internal" href="#return-food-property-table" id="id6">Return food property table</a></p></li>
+<li><p><a class="reference internal" href="#variation-return-nutrient-fact-panel-nfp-type" id="id7">Variation: Return Nutrient Fact Panel &lt;NFP_type&gt;</a></p></li>
+<li><p><a class="reference internal" href="#variation-return-dates" id="id8">Variation: Return dates</a></p></li>
+<li><p><a class="reference internal" href="#variation-return-cross-references-xrefs" id="id9">Variation: Return Cross References &lt;xrefs&gt;</a></p></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#quality-control-using-provenance-ontology-and-rest" id="id10">Quality Control using Provenance Ontology and REST</a></li>
+<li><p><a class="reference internal" href="#quality-control-using-provenance-ontology-and-rest" id="id10">Quality Control using Provenance Ontology and REST</a></p></li>
 </ul>
 </div>
 <p><a class="reference internal" href="../10_dir/$_10-term-project.html#terms-label-project"><span class="std std-ref">Label project</span></a>  data will be available to <a class="reference internal" href="../10_dir/$_10-term-project.html#terms-investigator"><span class="std std-ref">investigators</span></a>  via <a class="reference internal" href="../10_dir/$_10-term-project.html#terms-rest"><span class="std std-ref">REST</span></a>  (Representational State Transfer) services. REST is a simple stateless architecture that runs over HTTP. REST service reads a designated Web page that contains an XML file in RDF format. XML/RDF file describes and includes label project data. Data is returned to investigator in <a class="reference internal" href="../10_dir/$_10-term-project.html#terms-json-ld"><span class="std std-ref">JSON-LD</span></a>  format.</p>
@@ -95,18 +96,14 @@
 <h4><a class="toc-backref" href="#id2">Query Parameters: Input Specification</a><a class="headerlink" href="#query-parameters-input-specification" title="Permalink to this headline">¶</a></h4>
 <p>Input portion of URL tells service which records to use as subject of query.</p>
 <p>This is further subdivided into two or more locations in URL “path” as follows:</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name" colspan="2">query parameter title:</th></tr>
-<tr class="field-odd field"><td>&#160;</td><td class="field-body">input specification</td>
-</tr>
-<tr class="field-even field"><th class="field-name" colspan="2">query parameter domain:</th></tr>
-<tr class="field-even field"><td>&#160;</td><td class="field-body">values may include food, compound, Nutrient Fact Panel (NFP) values and other inputs</td>
-</tr>
-</tbody>
-</table>
+<dl class="field-list simple">
+<dt class="field-odd">query parameter title</dt>
+<dd class="field-odd"><p>input specification</p>
+</dd>
+<dt class="field-even">query parameter domain</dt>
+<dd class="field-even"><p>values may include food, compound, Nutrient Fact Panel (NFP) values and other inputs</p>
+</dd>
+</dl>
 <p>For example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>                           <span class="mi">1</span>          <span class="mi">2</span>            <span class="mi">3</span>
 <span class="o">&lt;</span><span class="n">input_specification</span><span class="o">&gt;</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">domain</span><span class="o">&gt;/&lt;</span><span class="n">namespace</span><span class="o">&gt;/&lt;</span><span class="n">identifiers</span><span class="o">&gt;</span>
@@ -171,109 +168,109 @@
 </div>
 <div class="section" id="return-food-property-table">
 <h5><a class="toc-backref" href="#id6">Return food property table</a><a class="headerlink" href="#return-food-property-table" title="Permalink to this headline">¶</a></h5>
-<table border="1" class="colwidths-given docutils">
+<table class="colwidths-given docutils align-default">
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col style="width: 50%" />
+<col style="width: 50%" />
 </colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Property</th>
-<th class="head">Notes</th>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Notes</p></th>
 </tr>
 </thead>
-<tbody valign="top">
-<tr class="row-even"><td>to_be_specified</td>
-<td>to_be_specified</td>
+<tbody>
+<tr class="row-even"><td><p>to_be_specified</p></td>
+<td><p>to_be_specified</p></td>
 </tr>
-<tr class="row-odd"><td>to_be_specified</td>
-<td>to_be_specified</td>
+<tr class="row-odd"><td><p>to_be_specified</p></td>
+<td><p>to_be_specified</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="section" id="variation-return-nutrient-fact-panel-nfp-type">
 <h5><a class="toc-backref" href="#id7">Variation: Return Nutrient Fact Panel &lt;NFP_type&gt;</a><a class="headerlink" href="#variation-return-nutrient-fact-panel-nfp-type" title="Permalink to this headline">¶</a></h5>
-<table border="1" class="colwidths-given docutils">
+<table class="colwidths-given docutils align-default">
 <colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
 </colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Options</th>
-<th class="head">Allowed Values</th>
-<th class="head">meaning</th>
+<thead>
+<tr class="row-odd"><th class="head"><p>Options</p></th>
+<th class="head"><p>Allowed Values</p></th>
+<th class="head"><p>meaning</p></th>
 </tr>
 </thead>
-<tbody valign="top">
-<tr class="row-even"><td>NFP_type</td>
-<td>all, primary, secondary</td>
-<td>Type of NFP to return given, USDA_fids, PC_cids</td>
+<tbody>
+<tr class="row-even"><td><p>NFP_type</p></td>
+<td><p>all, primary, secondary</p></td>
+<td><p>Type of NFP to return given, USDA_fids, PC_cids</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="section" id="variation-return-dates">
 <h5><a class="toc-backref" href="#id8">Variation: Return dates</a><a class="headerlink" href="#variation-return-dates" title="Permalink to this headline">¶</a></h5>
-<table border="1" class="colwidths-given docutils">
+<table class="colwidths-given docutils align-default">
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col style="width: 50%" />
+<col style="width: 50%" />
 </colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Date</th>
-<th class="head">Meaning</th>
+<thead>
+<tr class="row-odd"><th class="head"><p>Date</p></th>
+<th class="head"><p>Meaning</p></th>
 </tr>
 </thead>
-<tbody valign="top">
-<tr class="row-even"><td>Deposition</td>
-<td>when an USDA_fid or NFP_id first appeared</td>
+<tbody>
+<tr class="row-even"><td><p>Deposition</p></td>
+<td><p>when an USDA_fid or NFP_id first appeared</p></td>
 </tr>
-<tr class="row-odd"><td>Modification</td>
-<td>when an USDA_fid or NFP_id was last modified</td>
+<tr class="row-odd"><td><p>Modification</p></td>
+<td><p>when an USDA_fid or NFP_id was last modified</p></td>
 </tr>
-<tr class="row-even"><td>Hold</td>
-<td>when an USDA_fid or NFP_id will be released</td>
+<tr class="row-even"><td><p>Hold</p></td>
+<td><p>when an USDA_fid or NFP_id will be released</p></td>
 </tr>
-<tr class="row-odd"><td>Creation</td>
-<td>when a USDA_fid or NFP_id first appeared</td>
+<tr class="row-odd"><td><p>Creation</p></td>
+<td><p>when a USDA_fid or NFP_id first appeared</p></td>
 </tr>
-<tr class="row-even"><td>Deprecation</td>
-<td>when a USDA_fid or NFP_id is no longer active</td>
+<tr class="row-even"><td><p>Deprecation</p></td>
+<td><p>when a USDA_fid or NFP_id is no longer active</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="section" id="variation-return-cross-references-xrefs">
 <h5><a class="toc-backref" href="#id9">Variation: Return Cross References &lt;xrefs&gt;</a><a class="headerlink" href="#variation-return-cross-references-xrefs" title="Permalink to this headline">¶</a></h5>
-<table border="1" class="colwidths-given docutils">
+<table class="colwidths-given docutils align-default">
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col style="width: 50%" />
+<col style="width: 50%" />
 </colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Cross Reference</th>
-<th class="head">Meaning</th>
+<thead>
+<tr class="row-odd"><th class="head"><p>Cross Reference</p></th>
+<th class="head"><p>Meaning</p></th>
 </tr>
 </thead>
-<tbody valign="top">
-<tr class="row-even"><td>RegistryID</td>
-<td>external registry identifier</td>
+<tbody>
+<tr class="row-even"><td><p>RegistryID</p></td>
+<td><p>external registry identifier</p></td>
 </tr>
-<tr class="row-odd"><td>PubMedID</td>
-<td>NCBI PubMed identifier</td>
+<tr class="row-odd"><td><p>PubMedID</p></td>
+<td><p>NCBI PubMed identifier</p></td>
 </tr>
-<tr class="row-even"><td>DBURL</td>
-<td>external database home page URL</td>
+<tr class="row-even"><td><p>DBURL</p></td>
+<td><p>external database home page URL</p></td>
 </tr>
-<tr class="row-odd"><td>TaxonomyID</td>
-<td>NCBI taxonomy identifier</td>
+<tr class="row-odd"><td><p>TaxonomyID</p></td>
+<td><p>NCBI taxonomy identifier</p></td>
 </tr>
-<tr class="row-even"><td>SourceName</td>
-<td>external depositor name</td>
+<tr class="row-even"><td><p>SourceName</p></td>
+<td><p>external depositor name</p></td>
 </tr>
-<tr class="row-odd"><td>SourceCategory</td>
-<td>depositor category(ies)</td>
+<tr class="row-odd"><td><p>SourceCategory</p></td>
+<td><p>depositor category(ies)</p></td>
 </tr>
 </tbody>
 </table>
@@ -286,18 +283,18 @@
 <p>For example, Ontomatica <span class="xref std std-ref">imports</span>  the Provenance Ontology <code class="xref py py-class docutils literal notranslate"><span class="pre">[prov]</span></code>.</p>
 <p>The following illustrates a <a class="reference internal" href="../10_dir/$_10-term-project.html#terms-curator"><span class="std std-ref">curator</span></a>  using <code class="xref py py-class docutils literal notranslate"><span class="pre">[prov]</span></code>:</p>
 <ul class="simple">
-<li>Alanna wishes to verify that a new data set correctly addresses previous error.</li>
-<li>David <code class="xref py py-class docutils literal notranslate"><span class="pre">[ex:David]</span></code> documents Alanna’s instructions <code class="xref py py-class docutils literal notranslate"><span class="pre">[ex:instructions]</span></code> in a plan <code class="xref py py-class docutils literal notranslate"><span class="pre">[prov:Plan]</span></code>.</li>
-<li>David then generates a new dataset <code class="xref py py-class docutils literal notranslate"><span class="pre">[ex:dataset2]</span></code> that implements correction activity <code class="xref py py-class docutils literal notranslate"><span class="pre">[ex:correct1]</span></code>.</li>
-<li>Alanna confirms <code class="xref py py-class docutils literal notranslate"><span class="pre">[prov:Plan]</span></code> and executes a <code class="xref py py-class docutils literal notranslate"><span class="pre">diff</span></code> (difference) to contrast <code class="xref py py-class docutils literal notranslate"><span class="pre">[ex:dataset2]</span></code> with <code class="xref py py-class docutils literal notranslate"><span class="pre">[ex:dataset1]</span></code>.</li>
+<li><p>Alanna wishes to verify that a new data set correctly addresses previous error.</p></li>
+<li><p>David <code class="xref py py-class docutils literal notranslate"><span class="pre">[ex:David]</span></code> documents Alanna’s instructions <code class="xref py py-class docutils literal notranslate"><span class="pre">[ex:instructions]</span></code> in a plan <code class="xref py py-class docutils literal notranslate"><span class="pre">[prov:Plan]</span></code>.</p></li>
+<li><p>David then generates a new dataset <code class="xref py py-class docutils literal notranslate"><span class="pre">[ex:dataset2]</span></code> that implements correction activity <code class="xref py py-class docutils literal notranslate"><span class="pre">[ex:correct1]</span></code>.</p></li>
+<li><p>Alanna confirms <code class="xref py py-class docutils literal notranslate"><span class="pre">[prov:Plan]</span></code> and executes a <code class="xref py py-class docutils literal notranslate"><span class="pre">diff</span></code> (difference) to contrast <code class="xref py py-class docutils literal notranslate"><span class="pre">[ex:dataset2]</span></code> with <code class="xref py py-class docutils literal notranslate"><span class="pre">[ex:dataset1]</span></code>.</p></li>
 </ul>
 <p>Curator uses a REST conversation to implement the example above.</p>
 <div class="admonition seealso">
-<p class="first admonition-title">See also</p>
+<p class="admonition-title">See also</p>
 <p>Model sites that implement REST</p>
-<ul class="last simple">
-<li><a class="reference external" href="http://www.chemaxon.com/products/jchem-web-services/">ChemAxon concepts</a></li>
-<li><a class="reference external" href="https://restdemo.chemaxon.com/apidocs/">ChemAxon application programming interface (APIs)</a></li>
+<ul class="simple">
+<li><p><a class="reference external" href="http://www.chemaxon.com/products/jchem-web-services/">ChemAxon concepts</a></p></li>
+<li><p><a class="reference external" href="https://restdemo.chemaxon.com/apidocs/">ChemAxon application programming interface (APIs)</a></p></li>
 </ul>
 </div>
 <p><a class="reference internal" href="#return-to-top-02-core-12-rest-prov"><span class="std std-ref">Return to top</span></a></p>
@@ -370,17 +367,15 @@
 </ul>
 </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>$('#searchbox').show(0);</script>
 
 
 
@@ -397,7 +392,7 @@
       &copy;2020, Gig Graham.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.2</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
