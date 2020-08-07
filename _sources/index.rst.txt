@@ -12,6 +12,7 @@ Nutrition Database Modernization
 :Author: `Gig Graham <http://ontomatica.com/public/people/GXG/eCard.html>`_
 :Organization: `Ontomatica <http://www.ontomatica.com>`_
 :Date: 28 April 2015 testing workflow on 05/08/2020 testing again testing on 06/08/2020 again testing 07/08/20 travisci testing again on travisci.org
+testing againa on 07/08/20 new version 
 
 .. image:: _static/$_01-docs-latest_.svg
 
