@@ -26,8 +26,6 @@ jobs:
         make html
     - name: Deploy to Github Pages
       uses: JamesIves/github-pages-deploy-action@3.5.6
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         BRANCH: gh-pages
         FOLDER: sphinx/build/html
