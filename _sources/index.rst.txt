@@ -16,6 +16,8 @@ testing againa on 07/08/20 new version
 
 Testing again on 04/05/21... hurray....
 
+Testing for github actions
+
 .. image:: _static/$_01-docs-latest_.svg
 
 * :ref:`Index of Glossary Terms <genindex>`
