@@ -1,0 +1,34 @@
+version: 2
+
+jobs:
+  test:
+    docker:
+      - image: python:3.7
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: pip install -r requirements.txt
+      - run:
+          name: Test
+          command: pytest
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - test
+docs-build:
+  docker:
+    - image: python:3.7
+  steps:
+    - checkout
+    - run:
+        name: Install dependencies
+        command: pip install -r requirements.txt
+    - run:
+        name: Build docs
+        command: cd docs/ && make html
+    - persist_to_workspace:
+        root: docs/_build
+        paths: html
